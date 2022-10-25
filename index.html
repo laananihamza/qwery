@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normlize.css">
+    <link rel="stylesheet" href="css/line-awesome.css">
+    <link rel="stylesheet" href="css/line-awesome.min.css">
+
+    <link rel="stylesheet" href="css/qwery.css">
+
+    <!-- google font : font-family: 'Bebas Neue', cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!--  google font : Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Qwery</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/qweryLOGO.png" type="image/x-icon">
+    <!-- swiper.js [slides] -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <span class="follow-dot"></span>
+    <!-- Start Header -->
+    <header>
+        <div class="header">
+            <div class="links">
+                <ul class="nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <a href="#"><img src="images/qweryLOGO.png" alt=""></a>
+            </div>
+            <div class="other">
+                <i class="las la-search fs-2 text-light pe-2" id="searchSide" data-control="searchSide"></i>
+                <!-- <i class="lab la-buromobelexperte"></i> -->
+                <div class="bars">
+                    <!-- <i class="las la-braille text-light bar1"></i>
+                    <i class="las la-ellipsis-v text-light bar2"></i> -->
+                    <span class="leftSide">
+                        <i class="fas fa-bars fs-4 text-light" id="leftSide" data-control="leftSide"></i>
+                    </span>
+                    <span class="topSide">
+                        <i class="fas fa-bars fs-4 text-light" id="topSide" data-control="topSide"></i>
+
+                    </span>
+                </div>
+                <div class="slideLeft" data-slide="slideLeft">
+                    <div class="head">
+                        <div class="logo">
+                            <a href="#"><img src="images/qwery-dark.png" alt=""></a>
+                        </div>
+                        <div class="close" data-control="close">
+                            <i class="las la-times fs-4 pt-1"></i>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <div class="fb p-2">
+                            <i class="lab la-facebook-f fs-2"></i>
+                            <span>Facebook</span>
+                        </div>
+                        <div class="tw p-2">
+                            <i class="lab la-twitter fs-2"></i>
+                            <span>Twitter</span>
+                        </div>
+                        <div class="ins p-2">
+                            <i class="lab la-instagram fs-2"></i>
+                            <span>Instagram</span>
+                        </div>
+                        <div class="linkedin p-2">
+                            <i class="lab la-linkedin-in fs-2"></i>
+                            <span>Linkedin</span>
+                        </div>
+                    </div>
+                    <div class="contact border-top pt-5">
+                        <p class="num fs-3">
+                            <a href="tel:+1 854 663 254" class="text-decoration-none text-dark">+1 854 663 254</a>
+                        </p>
+                        <p class="email fs-5"><a href="mailto:LAANANI@MAIL.COM"
+                                class="text-decoration-none text-dark">LAANANI@MAIL.COM</a></p>
+                    </div>
+                </div>
+                <div class="slideSearch" data-slide="slideSearch">
+                    <div class="head">
+                        <div class="logo">
+                            <a href="#"><img src="images/qweryLOGO.png" alt=""></a>
+                        </div>
+                        <div class="closeSearch fs-1 text-light" data-control="closeSearch">
+                            <i class="las la-times fs-4 pt-1 closeSearchIcon"></i>
+                        </div>
+                    </div>
+                    <div class="searchBox">
+                        <form action="" method="post">
+                            <span class="search">
+                                <input type="text" placeholder='type words and hit enter'>
+                                <i class="las la-search fs-2 text-light pe-2"></i>
+                            </span>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="slideTop" data-slide="slideTop">
+                    <div class="content">
+                        <div class="head">
+                            <div class="logo">
+                                <a href="#"><img src="images/qweryLOGO.png" alt=""></a>
+                            </div>
+                            <div class="closeTop fs-1 text-light" data-control="closeTop">
+                                <span class="opacity-75 me-1 fs-4">Close</span><i
+                                    class="las la-times fs-3  closeTopIcon"></i>
+                            </div>
+                        </div>
+                        <div class="menu">
+                            <div class="link">
+                                <ul class="sideNav">
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Portfolio</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="contact">
+                                <div class="email">
+                                    <p class="text-light fs-5 m-0">HAVE A PROJECT?</p>
+                                    <a href="mailto:laanani@mail.com"
+                                        class="mailto text-light fs-3 m-0">LAANANI@MAIL.COM</a>
+                                </div>
+                                <div class="work mt-5">
+                                    <p class="text-light fs-5 m-0">WANT TO WORK WITH ME?</p>
+                                    <a href="#about" class="send text-light fs-3"><span>SEND BRIEF</span><i
+                                            class="las la-arrow-right ms-2 fs-2 text-danger"></i></a>
+                                </div>
+                                <div class="buy mt-5">
+                                    <p class="text-light fs-5 m-0">WANT TO BUY ILLUSTRATIONS?</p>
+                                    <a href="#shop" class="go text-light fs-3"><span>GO TO SHOP</span><i
+                                            class="las la-arrow-right ms-2 fs-2 text-danger"></i></a>
+                                </div>
+                            </div>
+                            <div class="media pt-4">
+                                <i class="lab la-facebook-f me-md-5 fs-5"></i>
+                                <i class="lab la-twitter me-md-5 fs-5"></i>
+                                <i class="lab la-instagram me-md-5 fs-5"></i>
+                                <i class="lab la-linkedin-in fs-5"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="touch">
+                    <a href="#">Get in touch<i class="las la-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- start landing -->
+    <section class="landing">
+        <div class="container-fluid">
+            <div class="welcoming text-center">
+                <h5 class="text-white mb-4 ">welcome to qwery</h5>
+                <p class="text-white">we craft emotional</p>
+                <p class="text-white">theme design</p>
+                <div class="link">
+                    <a href="#" class="text-white text-decoration-none">about us <i class="las la-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="mouse">
+                <!-- <i class="las la-mouse"></i> -->
+                <a href="#"><img src="images/mouse.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <div class="toUp  position-fixed" id="toUp">
+        <i class="las la-arrow-up p-3 fs-4 text-white"></i>
+    </div>
+    <!-- WE ARE -->
+    <section class="we part1">
+        <div class="heading">
+            <div class="row text-center w-100 m-0">
+                <div class="col-lg-2 col-md-4 col-sm-6 py-5 px-lg-4 px-md-3 px-sm-2 border">
+                    <img src="images/client-hover-11-copyright.png" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 py-5 px-lg-4 px-md-3 px-sm-2 border">
+                    <img src="images/client-hover-12-2-copyright.png" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 py-5 px-lg-4 px-md-3 px-sm-2 border">
+                    <img src="images/client-hover-13-2-copyright.png" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 py-5 px-lg-4 px-md-3 px-sm-2 border">
+                    <img src="images/client-hover-15-2-copyright.png" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 py-5 px-lg-4 px-md-3 px-sm-2 border">
+                    <img src="images/client-hover-16-2-copyright.png" alt="">
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 py-5 px-lg-4 px-md-3 px-sm-2 border">
+                    <img src="images/client-hover-9-2-copyright.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="we part2">
+        <div class="postes mt-5 py-5">
+            <div class="container">
+                <div class="title text-center text-uppercase">
+                    <p class="fs-4">
+                        WHO WE ARE
+                    </p>
+                    <p class="summary mx-auto">
+                        WE ARE A MODERN ENGINEERING CREATIVE AGENCY
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="we part3 pb-5">
+        <div class="posts">
+            <div class="container">
+                <div class="d-grid justify-content-center boxes">
+                    <div class="box position-relative">
+                        <span>01.</span>
+                        <a href="#"><img src="images/engineering-image-copyright-8-1536x1024.jpg" alt=""></a>
+                        <div class="txt position-absolute">
+                            <p class="fs-3 text-uppercase">alternative Energy</p>
+                            <p class="fs-6 show ">alternative Energy</p>
+                        </div>
+                    </div>
+                    <div class="box position-relative">
+                        <span>02.</span>
+                        <a href="#"><img src="images/engineering-image-copyright-53-1536x1024.jpg" alt=""></a>
+                        <div class="txt position-absolute">
+                            <p class="fs-3 text-uppercase">alternative Energy</p>
+                            <p class="fs-6 show">alternative Energy</p>
+                        </div>
+                    </div>
+                    <div class="box position-relative">
+                        <span>03.</span>
+                        <a href="#"> <img src="images/engineering-image-copyright-36-1536x1024.jpg" alt="">
+                        </a>
+                        <div class="txt position-absolute">
+                            <p class="fs-3 text-uppercase">alternative Energy</p>
+                            <p class="fs-6 show">alternative Energy</p>
+                        </div>
+                    </div>
+                    <div class="box position-relative">
+                        <span>04.</span>
+                        <a href="#"><img src="images/engineering-image-copyright-28-1536x1024.jpg" alt=""></a>
+                        <div class="txt position-absolute">
+                            <p class="fs-3 text-uppercase">alternative Energy</p>
+                            <p class="fs-6 show">alternative Energy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="link services mx-auto mt-5">
+                    <a href="#" class="btn text-uppercase text-white"><span class="me-3 fs-6">services</span> <i
+                            class="las la-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- About Us -->
+    <div class="about text-center">
+        <section class="head-about p-1 py-5 p-lg-5">
+            <div class="container">
+
+                <div class="title text-center text-uppercase">
+                    <p class="fs-5">
+                        About us
+                    </p>
+                    <p class="summary mx-auto mb-0 fs-1 w-50">
+                        We design and develop exclusive smart prouducts
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="boxes mt-0 my-5 p-2 py-5 p-lg-5">
+
+
+            <!-- <div class=""> -->
+            <div class="container">
+                <div class="boxesContent d-grid gap-3">
+                    <a href="#" class="text-black">
+                        <div class="box">
+                            <i class="las la-map-marked-alt"></i>
+                            <div class="text my-3">
+                                <p class="title text-uppercase text-black fs-3"> CREATIVE approach</p>
+                                <p class="description text-black-50 fs-6">Out of the box thinking</p>
+                            </div>
+                            <i class="fa-solid fa-ellipsis more"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box">
+                            <i class="las la-robot"></i>
+                            <div class="text my-3">
+                                <p class="title text-uppercase text-black fs-3">AUTOMATIC PROCESS</p>
+                                <p class="description text-black-50 fs-6">Highly technological tools</p>
+                            </div>
+                            <i class="fa-solid fa-ellipsis more"></i>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="box">
+                            <i class="fa-solid fa-computer-mouse"></i>
+                            <div class="text my-3">
+                                <p class="title text-uppercase text-black fs-3">Professional team</p>
+                                <p class="description text-black-50 fs-6">Of experienced enginners</p>
+                            </div>
+                            <i class="fa-solid fa-ellipsis more"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box">
+                            <i class="fa-solid fa-code-merge"></i>
+                            <div class="text my-3">
+                                <p class="title text-uppercase text-black fs-3">Effective solutions</p>
+                                <p class="description text-black-50 fs-6">That fit your goals perfectly</p>
+                            </div>
+                            <i class="fa-solid fa-ellipsis more"></i>
+                        </div>
+                    </a>
+                </div>
+                <!-- </div> -->
+        </section>
+        <section class="information">
+            <div class="container">
+                <div class="content d-flex justify-content-between align-items-center flex-column  flex-lg-row">
+                    <div class="image position-relative">
+                        <img src="images/information.jpg" alt="">
+                        <span class="box text-uppercase fs-1 text-white p-4 position-absolute bottom-0">
+                            we create the future of your business
+                        </span>
+                    </div>
+                    <div class="info text-start">
+                        <div class="title text-uppercase fs-5">
+                            unique prouducts
+                        </div>
+                        <div class="summary text-uppercase mb-3">we Develop & create High-tech Future.</div>
+                        <div class="description text-black-50">We appreciate your trust greatly! Our clients choose us
+                            and our products because they know we’re the best.</div>
+                        <div class="adjctive text-uppercase">
+                            <div class="fs-4 p-3 border-bottom"><span class="num text-black-50">01.</span><span
+                                    class="text-uppercase ps-2">ENDLESS
+                                    POSSIBILITIES</span></div>
+                            <div class="fs-4 p-3"><span class="num text-black-50">02.</span><span
+                                    class="text-uppercase ps-2">PROCESS
+                                    OPTIMIZATION</span></div>
+                        </div>
+                        <div class="link services mx-auto mt-5">
+                            <a href="#" class="btn text-uppercase text-white"><span class="me-3 fs-6">services</span> <i
+                                    class="las la-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quality row mt-5 py-5">
+                    <div class="title py-5 col-lg-4 col-sm-12">
+                        <div class="text-start ps-5 ms-5 fs-4">
+                            quality guaranteed
+                        </div>
+                        <div class="main-text">
+                            our awards
+                        </div>
+                    </div>
+                    <div class="des col-lg-8 col-sm-12">
+                        <div class="head d-flex justify-content-between my-sm-5">
+                            <div class="text w-75 text-start fs-4 mb-2 text-black-50">
+                                Our area of practice is quite wide: design, engineering, robotics, architecture. The
+                                experts who work at our company know exactly how to make
+                                your project unique, fresh, and profitable.
+                            </div>
+                            <div class="link">
+                                <a href="#" class="btn fs-3">about Us <i class="las la-plus"></i></a>
+                            </div>
+                        </div>
+                        <div class="slides overflow-hidden swiper">
+                            <div class="sliders d-flex flex-row gap-4 swiper-wrapper">
+                                <div
+                                    class="slide swiper-slide col-lg-3 col-md-4 col-sm-6 p-5 px-lg-4 px-md-3 px-sm-2 border position-relative">
+                                    <img src="images/client-hover-11-copyright.png" class="opacity-100" alt="">
+                                    <div
+                                        class="note start-0 top-0 fs-3 opacity-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center position-absolute">
+                                        <span>Site of the Year</span>
+                                        <span>2019</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="slide swiper-slide col-lg-3 col-md-4 col-sm-6 p-5 px-lg-4 px-md-3 px-sm-2 border position-relative">
+                                    <img src="images/client-hover-12-2-copyright.png" class="opacity-100" alt="">
+                                    <div
+                                        class="note start-0 top-0 fs-3 opacity-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center position-absolute">
+                                        <span>Site of the Year</span>
+                                        <span>2018</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="slide swiper-slide col-lg-3 col-md-4 col-sm-6 p-5 px-lg-4 px-md-3 px-sm-2 border position-relative">
+                                    <img src="images/client-hover-13-2-copyright.png" class="opacity-100" alt="">
+                                    <div
+                                        class="note start-0 top-0 fs-3 opacity-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center position-absolute">
+                                        <span>Site of the Year</span>
+                                        <span>2021</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="slide swiper-slide col-lg-3 col-md-4 col-sm-6 p-5 px-lg-4 px-md-3 px-sm-2 border position-relative">
+                                    <img src="images/client-hover-15-2-copyright.png" class="opacity-100" alt="">
+                                    <div
+                                        class="note start-0 top-0 fs-3 opacity-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center position-absolute">
+                                        <span>Site of the Year</span>
+                                        <span>2020</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- <div class=" d-flex flex-row gap-4 slides overflow-hidden">
+                            <div
+                                class="slide col-lg-3 col-md-4 col-sm-6 p-5 px-lg-4 px-md-3 px-sm-2 border position-relative">
+                                <img src="images/client-hover-11-copyright.png" class="opacity-100" alt="">
+                                <div
+                                    class="note start-0 top-0 fs-3 opacity-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center position-absolute">
+                                    <span>Site of the Year</span>
+                                    <span>2019</span>
+                                </div>
+                            </div>
+                            <div
+                                class="slide col-lg-3 col-md-4 col-sm-6 p-5 px-lg-4 px-md-3 px-sm-2 border position-relative">
+                                <img src="images/client-hover-12-2-copyright.png" class="opacity-100" alt="">
+                                <div
+                                    class="note start-0 top-0 fs-3 opacity-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center position-absolute">
+                                    <span>Site of the Year</span>
+                                    <span>2018</span>
+                                </div>
+                            </div>
+                            <div
+                                class="slide col-lg-3 col-md-4 col-sm-6 p-5 px-lg-4 px-md-3 px-sm-2 border position-relative">
+                                <img src="images/client-hover-13-2-copyright.png" class="opacity-100" alt="">
+                                <div
+                                    class="note start-0 top-0 fs-3 opacity-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center position-absolute">
+                                    <span>Site of the Year</span>
+                                    <span>2021</span>
+                                </div>
+                            </div>
+                            <div
+                                class="slide col-lg-3 col-md-4 col-sm-6 p-5 px-lg-4 px-md-3 px-sm-2 border position-relative">
+                                <img src="images/client-hover-15-2-copyright.png" class="opacity-100" alt="">
+                                <div
+                                    class="note start-0 top-0 fs-3 opacity-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center position-absolute">
+                                    <span>Site of the Year</span>
+                                    <span>2020</span>
+                                </div>
+                            </div>
+
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="video-pic position-relative">
+                <div class="play-box position-absolute start-50 top-50">
+                    <button class="text-white" name="video-player">play</button>
+                </div>
+            </div>
+
+        </section>
+        <section class="work">
+            <div class="container">
+                <div class="row status">
+                    <div class="project statistics position-relative col-lg-3 col-md-6 col-sm-12"><span class="num"
+                            data-goal="98">00</span><span
+                            class="text position-absolute start-50 top-50 fs-3">projects</span></div>
+                    <div class="people statistics position-relative col-lg-3 col-md-6 col-sm-12"><span class="num"
+                            data-goal="65">00</span><span
+                            class="text position-absolute start-50 top-50 fs-3">people</span></div>
+                    <div class="center statistics position-relative col-lg-3 col-md-6 col-sm-12"><span class="num"
+                            data-goal="5">00</span><span
+                            class="text position-absolute start-50 top-50 fs-3">centers</span></div>
+                    <div class="office statistics position-relative col-lg-3 col-md-6 col-sm-12"><span class="num"
+                            data-goal="10">00</span><span
+                            class="text position-absolute start-50 top-50 fs-3">offices</span></div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="articles">
+        <div class="container">
+            <div class="head-text text-center mb-5">
+                <h4>Recent articles</h4>
+                <h1>latest news</h1>
+            </div>
+            <div class="news d-flex gap-4 justify-content-center flex-lg-row flex-md-row flex-column">
+                <div class="box py-4 px-0 col-lg-3 col-md-6 col-sm-12">
+                    <div class="head fs-6 px-4">
+                        <a href="#" class="text-black">mindset</a>
+                        <span class="date ms-2"><a href="#" class="text-black-50">Apr 21, 2020</a></span>
+                    </div>
+                    <div class="title px-4 fs-3 my-3">
+                        <a href="#" class="text-black">thinking out of the box: modern stereotypes & fears</a>
+                    </div>
+                    <div class="image overflow-hidden">
+                        <a href="#"><img src="images/engineering-image-copyright-17-890x664.jpg" alt=""></a>
+                    </div>
+                    <div class="link p-4 overflow-hidden mx-auto position-relative">
+                        <a href="#" class="text-black d-flex align-items-center"><span class="read">read
+                                more</span><i class="las la-plus ms-2 fs-3"></i></a>
+                    </div>
+                </div>
+                <div class="box py-4 px-0 col-lg-3 col-md-6 col-sm-12">
+                    <div class="head fs-6 px-4">
+                        <a href="#" class="text-black">mindset</a>
+                        <span class="date ms-2"><a href="#" class="text-black-50">Apr 21, 2020</a></span>
+                    </div>
+                    <div class="title px-4 fs-3 my-3">
+                        <a href="#" class="text-black">thinking out of the box: modern stereotypes & fears</a>
+                    </div>
+                    <div class="image overflow-hidden">
+                        <a href="#"><img src="images/engineering-image-copyright-41-890x664.jpg" alt=""></a>
+                    </div>
+                    <div class="link p-4 overflow-hidden mx-auto position-relative">
+                        <a href="#" class="text-black d-flex align-items-center"><span class="read">read
+                                more</span><i class="las la-plus ms-2 fs-3"></i></a>
+                    </div>
+                </div>
+                <div class="box py-4 px-0 col-lg-3 col-md-6 col-sm-12">
+                    <div class="head fs-6 px-4">
+                        <a href="#" class="text-black">mindset</a>
+                        <span class="date ms-2"><a href="#" class="text-black-50">Apr 21, 2020</a></span>
+                    </div>
+                    <div class="title px-4 fs-3 my-3">
+                        <a href="#" class="text-black">thinking out of the box: modern stereotypes & fears</a>
+                    </div>
+                    <div class="image overflow-hidden">
+                        <a href="#"><img src="images/engineering-image-copyright-53-890x664.jpg" alt=""></a>
+                    </div>
+                    <div class="link p-4 overflow-hidden mx-auto position-relative">
+                        <a href="#" class="text-black d-flex align-items-center"><span class="read">read
+                                more</span><i class="las la-plus ms-2 fs-3"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="link services mt-5 mx-auto">
+                <a href="#" class="text-white text-decoration-none fs-5 px-5">View more posts</a>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="container d-flex">
+            <div class="info">
+                <p class="main-text fs-4">
+                    contact us
+                </p>
+                <p class="desc">
+                    get in touch
+                </p>
+                <p class="text text-black-50 fs-5">
+                    Feel free to write us if you want us to become a part of your technological project or have an idea
+                    to
+                    discuss!
+                </p>
+            </div>
+            <div class="details d-flex gap-4 align-self-end justify-content-between">
+                <div class="address d-flex gap-3">
+                    <i class="las la-map-marker-alt fs-3 p-3"></i>
+                    <div class="place">
+                        <h4>address</h4>
+                        <p class="text-black-50">Morocco, Marrakesh 215 Gueliz Sbalioun street</p>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <div class="contact-details d-flex gap-3">
+                        <i class="las la-mobile fs-3 p-3"></i>
+                        <div class="info">
+                            <h4>Contact Details</h4>
+                            <a href="mailto:laananicompagny@business.com"
+                                class="text-decoration-none text-black-50 position-relative fs-5">laananicompagny@business.com</a>
+                            <p class="fs-3 mt-3">+212 5 78 36 55 78</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- https://google-map-generator.com/ -->
+
+
+    <div class="mapouter">
+        <div class="gmap_canvas"><iframe width="1960" height="494" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=30%20Rue%20Ibn%20A%C3%AFcha,%20Marrakech%2040000&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="title mb-lg-5 mb-md-4 mb-2 d-flex flex-lg-row flex-md-row flex-column  justify-content-between">
+                <div class="logo">
+                    <a href="#"><img src="images/qweryLOGO.png" alt=""></a>
+                </div>
+                <div class="text text-white m-lg-2 m-md-2 my-3">
+                    <p>
+                        WE PROVIDE ONLY <br>
+                        MODERN ENGINEERING SOLUTIONS
+                    </p>
+                </div>
+            </div>
+            <div class="content d-flex flex-lg-row flex-column py-4">
+                <div class="signup w-50">
+                    <p class="text-white py-2 fs-5">newsletter signup</p>
+                    <div class="form py-3 position-relative">
+                        <form action="" method="post">
+                            <div class="input">
+                                <i class="las la-envelope fs-3 text-white position-absolute"></i>
+                                <input type="text" name="email" class="bg-transparent text-white border-0 ps-5 w-100"
+                                    placeholder="Enter Your Email Address">
+                                <span class="submit">
+                                    <label for="sub" class="position-absolute end-0">
+                                        <i class="las la-arrow-right fs-3 text-white"></i>
+                                        <input type="submit" id="sub" class="d-none">
+                                    </label>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="policy my-2">
+                        <label for="check" class="checkbox d-flex text-black-50 w-100">
+                            <div class="checker">
+                                <input type="checkbox" name="" id="check" class="d-none">
+                                <div class="parent psd position-relative">
+                                </div>
+                            </div>
+                            <div class="agreed">
+                                <span class="text-white-50 mx-2">I agree to the</span> <a href="#"
+                                    class="text-white d-inline">Privacy Policy</a>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="others d-flex flex-lg-row flex-md-row flex-column justify-content-evenly w-50">
+                    <div class="socials">
+                        <h5 class="text-white">Socials</h5>
+                        <ul class="list-unstyled">
+                            <li class="py-2"><a href="#" class="fs-5 text-decoration-none">Facebook</a>
+                            </li>
+                            <li class="py-2"><a href="#" class="fs-5 text-decoration-none">Twitter</a>
+                            </li>
+                            <li class="py-2"><a href="#" class="fs-5 text-decoration-none">Dribble</a>
+                            </li>
+                            <li class="py-2"><a href="#" class="fs-5 text-decoration-none">Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <h5 class="text-white">Menu</h5>
+                        <ul class="list-unstyled">
+                            <li class="py-2"><a href="#" class="fs-5 text-decoration-none">Home</a></li>
+                            <li class="py-2"><a href="#" class="fs-5 text-decoration-none">Services</a>
+                            </li>
+                            <li class="py-2"><a href="#" class="fs-5 text-decoration-none">About</a></li>
+                            <li class="py-2"><a href="#" class="fs-5 text-decoration-none">Portfolio</a>
+                            </li>
+                            <li class="py-2"><a href="#" class="fs-5 text-decoration-none">contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mail">
+                        <h5 class="text-white">say hello</h5>
+                        <ul class="list-unstyled">
+                            <li><a class="fs-5"
+                                    href="mailto:laananicompagny@business.com">laananicompagny@business.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright py-4">
+                <span class="name">Laanani Compagny</span> &copy; <span class="year"></span>. <span class="rights">All
+                    Rights Reserved</span>.
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap -->
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js.map"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/qwery.js"></script>
+</body>
+
+</html>

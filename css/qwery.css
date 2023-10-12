@@ -18,6 +18,7 @@ body {
 }
 
 .follow-dot {
+    display: inline;
     position: absolute;
     width: 10px;
     height: 10px;
@@ -31,6 +32,12 @@ body {
     transform: translate(-50%, -50%);
     pointer-events: none;
 
+}
+
+@media (max-width: 768px) {
+    .follow-dot {
+        display: none;
+    }
 }
 
 header {

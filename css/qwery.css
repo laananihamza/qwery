@@ -587,6 +587,7 @@ header .header .other {
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
+    width: 100%;
 }
 
 .landing .welcoming p {
@@ -651,7 +652,7 @@ header .header .other {
 
 @media (max-width: 768px) {
     .landing .welcoming p {
-        font-size: 25px;
+        font-size: 45px;
         line-height: 1;
     }
 
